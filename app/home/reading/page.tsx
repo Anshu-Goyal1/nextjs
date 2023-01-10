@@ -10,15 +10,15 @@ function Reading() {
   
 
   function selected(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    e.target.classList.toggle("bg-slate-50");
-    e.target.classList.toggle("text-black");
-    e.target.classList.toggle("bg-amber-500");
-    e.target.classList.toggle("text-white");
-    e.target.classList.toggle("active");
+    (e.target as Element).classList.toggle("bg-slate-50");
+    (e.target as Element).classList.toggle("text-black");
+    (e.target as Element).classList.toggle("bg-amber-500");
+    (e.target as Element).classList.toggle("text-white");
+    (e.target as Element).classList.toggle("active");
 
     // setword((prev,key)=>key)
 
-    setword((prev) => (prev.includes(e.target.value) ? prev.filter((el) => el !== e.target.value) : [...prev, e.target.value]));
+    setword((prev) => (prev.includes((e.target as Element).value) ? prev.filter((el) => el !== (e.target as Element).value) : [...prev, e.target.value]));
     console.log(word);
   }
 
