@@ -32,10 +32,10 @@ function Reading() {
 
           <h1 className="pb-4 justify-center text-lg font-medium">Grammer</h1>
         </div>
-        <div className="flex justify-center">
+        <div className="md:flex lg:flex justify-center">
         <ProgressBar
           customLabel=""
-          className="m-5 h-1 md:w-2/4 lg:w-2/6"
+          className="m-5 h-1 sm:w-full md:w-2/4 lg:w-2/6"
           completed={progressvalue}
           height="10px"
           bgColor="#F59E0B"
