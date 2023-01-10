@@ -18,7 +18,7 @@ function Reading() {
 
     // setword((prev,key)=>key)
 
-    setword((prev) => (prev.includes((e.target as Element).value) ? prev.filter((el) => el !== (e.target as Element).value) : [...prev, e.target.value]));
+    setword((prev:any) => (prev.includes((e.target as HTMLInputElement).value) ? prev.filter((el:any) => el !== (e.target as HTMLInputElement).value) : [...prev, (e.target as HTMLInputElement).value]));
     console.log(word);
   }
 
@@ -52,7 +52,7 @@ function Reading() {
 
           <div className="bg-amber-50 p-16 rounded-3xl flex flex-wrap w-full justify-center md:w-2/4 m-auto lg:w-3/6">
             {/* <h1 className="">If you don't like your destiny, don't accept it</h1> */}
-            {word.map((oneword) => (
+            {word.map((oneword:any) => (
               <p className="text-xl font-extrabold mx-2">{oneword}</p>
             ))}
           </div>
