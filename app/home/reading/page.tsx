@@ -23,7 +23,7 @@ function Reading() {
   }
 
   return (
-    <div className="h-auto  box-border text-center bg-zinc-100 font-sans text-slate-800 text-base">
+    <div className=" h-screen  box-border text-center bg-zinc-100 font-sans text-slate-800 text-base">
       <header className=" text-centre pt-14 m-auto bg-zinc-100 ">
         <div className="inline">
           <Link href="/home">
